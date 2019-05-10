@@ -31,6 +31,13 @@
 23.修改bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除
 	当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，在git stash pop，回到工作现场
 24.如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>
+25.查看远程库信息，使用git remote -v
+26.本地新建的分支如果不推送到远程，对其他人就是不可见的
+	从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull 抓取远程的新提交
+27.在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name
+	本地和远程分支的名称最好一致
+28.建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name
+29.从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
 
 
 
