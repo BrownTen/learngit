@@ -25,6 +25,8 @@
 18.创建+切换分支：git checkout -b <name>
 19.合并某分支到当前分支：git merge <name>
 20.删除分支：git branch -d <name>
+21.用git log --graph命令可以看到分支合并图
+	如：git log --graph --pretty=oneline --abbrev-commit
 
 
 
